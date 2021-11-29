@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>f1m2js</title>
+</head>
+<body>
+    <h1 id="kopje">museum online javascript</h1>
+    <p id="mkblauw">maak achter grond blauw</p>
+    <p id="mkZwart">maak achtergrond zwart</p>
+    <p id="mkWhite">maak achtergrond wit</p>
+    <p id="mkGrey">maak achtergrond grijs</p>
+    <script>
+        	const kopje = document.getElementById("kopje");
+            const mkblauw = document.getElementById("mkblauw");
+            const mkZwart = document.getElementById("mkZwart");
+            const mkWhite = document.getElementById("mkWhite");
+            const mkGrey = document.getElementById("mkGrey");
+
+            kopje.style.backgroundColor = "red";
+
+            kopje.addEventListener('click', voeruitkopje);
+            mkblauw.addEventListener('click', voeruitBlauw);
+            mkZwart.addEventListener('click', voeruitZwart);
+            mkWhite.addEventListener('click', voeruitWhite);
+            mkGrey.addEventListener('click', voeruitGrey);
+
+            function voeruitkopje(){
+                kopje.style.backgroundColor = "yellow";
+                kopje.style.color = "black";
+            }
+
+            function voeruitBlauw(){
+                document.body.style.backgroundColor = "blue";
+                document.body.style.color = "white";
+                kopje.style.backgroundColor ="white";
+                kopje.style.color ="black";
+            }
+
+            function voeruitZwart(){
+                document.body.style.backgroundColor = "black";
+                document.body.style.color ="Grey";
+            }
+
+            function voeruitWhite(){
+                document.body.style.backgroundColor ="white";
+                document.body.style.color ="black";
+            }
+
+            function voeruitGrey(){
+                document.body.style.backgroundColor ="grey";
+                document.body.style.color ="black";
+            }
+    </script>
+</body>
+</html>
