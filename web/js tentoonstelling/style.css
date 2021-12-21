@@ -1,0 +1,19 @@
+#container{
+    background-color: aqua;
+    width: 750px;
+    height: 375px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tekst{
+    padding: 20px;
+}
+
+button{
+    position: inherit;
+    bottom: 10px;
+}
+

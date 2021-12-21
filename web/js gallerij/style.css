@@ -1,0 +1,16 @@
+.button {
+    width: 100px;
+    background-color: aqua;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+}
+
+.button:hover{
+    background-color: green;
+}
+
+img {
+    width: 800px;
+    height: 600px;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>slideshow gallerij</h1>
+    <div class="button" onclick="onClickNext()">next image</div>
+    <div class="button" onclick="onClickPrevious()">previous image</div>
+    <img id="img" src="img/foto-js1.jpg" alt="random foto">
+
+    <script>
+        var position = 0;
+        var img1 = "img/foto-js1.jpg";
+        var img2 = "img/foto-js2.jpg";
+        var img3 = "img/foto-js3.jpg";
+        var imgElement = document.getElementById("img");
+
+        function onClickNext(){
+            position = position + 1
+            if (position == 3){
+                position = 0;
+            }
+            setImage();
+        }
+
+        function onClickPrevious(){
+            position = position - 1
+            if (position == -1){
+                position = 2;
+            }
+            setImage();
+        }
+
+        function setImage(){
+            if (position == 0){
+                imgElement.src = img1;
+            }
+            else if (position == 1){
+                imgElement.src = img2;
+            }
+            else if (position == 2){
+                imgElement.src = img3;
+            }
+        }
+    </script>
+</body>
+</html>
